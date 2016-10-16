@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>前世今生</title>
+	<script type="text/javascript">
+		/*var zhao = ["赵云","赵信","赵括","赵飞燕"];
+		var qian =["钱多多","钱好多","钱真多","钱太多"];
+		//var sun =["孙权","孙尚香","孙坚","孙策"];
+		//var li =["李公公","李牧","李靖","李世民"];
+		//var zhou = ["周公","周杰伦","周恩来","周思思"];
+		//var wu =["吴福","吴大","吴人","吴后"];
+		//var xs = {"赵","钱"};
+
+		var ru = prompt("请输入您的姓氏");
+		if(ru == "zhao"){
+			var i = Math.floor(Math.random()*4);
+		    var chu=zhao[i];
+
+		}else if(ru == "qian"){
+			var i = Math.floor(Math.random()*4);
+		    var chu=qian[i];
+		   
+		}
+		//ru = new String();
+		 //console.log(typeof+ru);
+		// console.log(chu);*/
+
+		 var text ="赵云 赵信 赵括 赵飞燕,钱多多,钱好多,钱真多,钱太多,孙权,孙尚香,孙坚,孙策,上官婉儿,上官傲云,上官大人,上官婉云,司徒明月,司徒天剑,司徒长空,司徒不败";
+		 var ru = prompt("请输入您的姓氏"); 
+		 //var d =11;
+		 //var e =12;
+		  var pattern=new RegExp(""+ru+"\\W{1,2}","g"); //如何输出字；
+		  //var pattern =/"+ru+"/;   //如何进行双重转义？？？？
+		  var d = text.match(pattern);
+		  console.log(d);
+		  var i =Math.floor(Math.random()*4);//如何随机输出；
+		  var result =d[i];
+		  alert("您前世的名字叫:"+result);
+		  		  
+		 
+		 
+		  
+		  
+		
+		 //将变量赋予给正则表达式？？
+		 //var a =11;
+		 //var b =12;
+		 //var c=13;
+		 //var RegExp =""+a+b+c+"";
+		 //var result =RegExp;	
+		 //console.log(result);								   
+																
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
